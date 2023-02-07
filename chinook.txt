@@ -35,32 +35,3 @@ In ur terminal : =>
 10_Créer l'album de ton artiste favori en base, en renseignant correctement les trois tables albums, artists et tracks
 => INSERT INTO artists (name) VALUES ('2Pac');
 => INSERT INTO albums (title,artistid) VALUES ('Better Dayz', (SELECT artistid FROM artists WHERE name = '2Pac'));
-
-
-In ur terminal : =>
-=> sqlite3 moocademy.db 
-=> .mode column
-=> .headers on
-=> .tables
-
-
-CREATE TABLE `lessons` (
-`LessonId` INTEGER PRIMARY KEY AUTOINCREMENT, 
-`title` TEXT,
-`body` TEXT
-);
-
-
-CREATE TABLE `courses` (
-`id` INTEGER PRIMARY KEY AUTOINCREMENT, 
-`title` TEXT,
-`description` TEXT,
-`LessonId` = Inteer
-);
-
-INSERT INTO lessons (title,body) VALUES ('math','lecon de math');
-INSERT INTO lessons (title,body) VALUES ('francais','lecon de francais');
-INSERT INTO lessons (title,body) VALUES ('physique','lecon de physique');
-INSERT INTO lessons (title,body) VALUES ('anglais','lecon anglais');
-
-

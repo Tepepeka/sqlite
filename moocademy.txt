@@ -4,13 +4,11 @@ In ur terminal : =>
 => .headers on
 => .tables
 
-
 CREATE TABLE `lessons` (
 `LessonId` INTEGER PRIMARY KEY AUTOINCREMENT, 
 `title` TEXT,
 `body` TEXT
 );
-
 
 CREATE TABLE `courses` (
 `CourseId` INTEGER PRIMARY KEY AUTOINCREMENT, 
